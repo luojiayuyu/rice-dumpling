@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>粽子与屈原</title>
+<script type="text/javascript">
+function show1(e){
+    var aaa = e.name;
+    if(aaa == "qy"){
+        document.getElementById("p").style.display = "block";
+    }
+}
+</script>
+<style>
+	/*标题，屈原的图片（图片可跳转至屈原的介绍页面），屈原和粽子的传说*/
+#bg{
+	position: absolute;
+	float: left;
+	top: 100px;
+	left:150px;
+	}
+h2{ width: 600px;
+	position: absolute;
+	top:100px;
+	left: 375px;
+	font-family: "华文隶书"," 幼圆"," 华文彩云";
+	font-size: 32px;
+	color:cadetblue;
+	}
+#img{
+	position: absolute;
+	float:left;
+	top: 650px;
+	left:150px;
+	}
+#p{
+	position: absolute;
+	top: 250px;
+	left: 280px;
+	}
+#jt{
+	position: absolute;
+	float: right;
+	top: 740px;
+	right: 135px;
+	}
+</style>
+</head>
+
+<body>
+<img id="bg" src="picture/bj2.jpg" width="1000" height="700">
+<h2>小朋友们，端午节的由来与屈原有关哦！<br>点击左下方屈原的图片，有相关介绍哦！</h2>
+<img id="img" src="picture/qytp.jpg" width="150" height="150" onClick="show1(this)"  name="qy"/>
+<img id="p" src="picture/qyjs.png" width="753" height="365" style="display: none">
+<a href="index.html"><img id="jt" src="picture/fh.png" width="110" height="60"></a>
+</body>
+</html>
