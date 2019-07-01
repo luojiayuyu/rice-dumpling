@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>做题</title>
+</head>
+
+<body>
+</body>
+</html><html>
+<head>
+<meta charset="utf-8">
+<title>该做题啦！</title>
+<style type="text/css">
+a img{border:0;}
+a img:hover{border:0;}
+body{
+	margin:0;}
+/*内容*/
+#cs{
+	background:url(picture/bj4.jpg) no-repeat;
+	width:1000px;
+	height:620px; 
+	margin:0 auto;
+	position:relative;}
+#cs h1{
+	position:absolute;
+	top:200px;
+	left:430px;
+	font-family:"幼圆";
+	color:#575757;}
+#tm{
+	position:absolute;
+	top:260px;
+	left:190px;
+	width:650px;
+	height:300px;
+	font-family:"幼圆";
+	color:#575757;
+	font-weight:bold;}
+#tm h2{
+	font-size:26px;
+	}
+#tm ul{
+	font-size:24px;
+	}
+#tj{
+	background-color:#ECC7C1;
+	border:0;
+	font-family:"幼圆";
+	color:#575757;
+	font-weight:bold;
+	height:27px;
+	width:55px;
+	font-size:20px;
+	border-radius:5px;
+	position:absolute;
+	left:295px;
+	}
+#zq{
+	position:absolute;
+	width:430px;
+	height:60px;
+	left:240px;
+	top:85px;
+	font-family:"幼圆";
+	color:#926A5E;
+	font-size:20px;
+	font-weight:bold;
+	background-color:#FFFFFF;}
+/*内容*/
+
+
+#syy a img{
+	position:absolute;
+	top:480px;
+	left:210px;
+	}
+
+#xyy a img{
+	position:absolute;
+	top:480px;
+	left:750px;
+	
+	}
+#xyy a img:hover{
+	  width:75px;
+	  height:65px;
+	 
+	}	
+/*下一页*/
+</style>
+<script type="text/javascript">
+function myFunction()
+{
+	var abc=document.myform.answer.value;
+	var audio1 = document.getElementById('music1'); 
+	 var audio2 = document.getElementById('music2'); 
+	if(abc=="answer2" || abc=="answer3")
+	{document.getElementById("zq").innerHTML = "小朋友，你做错了哦！请再好好想一想吧！";
+	  audio2.play(); 
+	
+	}
+	else if(abc=="answer1")
+	{document.getElementById("zq").innerHTML = "恭喜你答对了！小朋友，你真棒！";
+	  audio1.play(); 
+}
+	else
+	{document.getElementById("zq").innerHTML="小朋友，你还没有做题哦！";
+	  audio2.play(); 
+}
+}
+</script>
+</head>
+
+<body>
+<div id="cs">
+<!--内容-->
+<h1>♡第二题♡</h1>
+<div id="tm">
+<h2>2&nbsp;.&nbsp;粽子是为了纪念哪个诗人呀？</h2>
+<form action="" method="post" name="myform" id="myform">
+<ul style="list-style:none;">
+<li><input type="radio" value="answer1" name="answer" />屈原</li>
+<li><input type="radio" value="answer2" name="answer" />李白</li>
+<li><input type="radio" value="answer3" name="answer" />杜甫</li>
+</ul>
+<br>
+<input type="button" value="查看" name="submit" onClick="myFunction()" id="tj" >
+<div id="zq">
+</div>
+<audio src="music/true.mp3" controls preload id="music1" hidden>
+</audio>
+<audio src="music/false.mp3" controls preload id="music2" hidden>
+</audio>
+</form>
+</div>
+<div id="syy">
+<a href="test1.html"><img src="picture/zuo2.png" width="70px" height="60px"></a>
+</div>
+<div id="xyy">
+<a href="test3.html"><img src="picture/you2.png" width="70px" height="60px"></a>
+</div>
+	</div>
+	</body>
+</html>
