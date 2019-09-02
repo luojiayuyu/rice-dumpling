@@ -7,20 +7,23 @@
 #bg{
 	background:url(picture/bj1.gif) no-repeat;
 	background-size: cover;
-	width:1000px;
+	background-attachment:fixed;
+	min-height:550px;
+	min-width:950px;
+	/*width:1000px;
 	height:600px; 
 	margin: 0px 0px;
-	position:relative;
+	position:relative;*/
 	}	
 #bt{
 	position:absolute;
 	top: 50px;
-	right: 30px;
+	left:55%;
 	}
 #dh{
 	position:absolute;
 	top: 270px;
-	left: 540px;
+	left: 55%;
 	width: 450px;
 	height: 200px;
 	}
@@ -48,15 +51,13 @@
 </style>
 </head>
 
-<body>
-<div id="bg">
+<body id="bg">
 <div id="bt"><img src="picture/bt.jpg" width="450" height="180"></div>
 <div id="dh">
    	 <div id="dh1"><img src="picture/tb1.png"><a href="quyuan.html">粽子与屈原</a></div>
   	 <div id="dh2"><img src="picture/tb2.png"><a href="zhizuo.html">粽子的制作</a></div>
 	 <div id="dh3"><img src="picture/tb3.png"><a href="youxi.html">课间玩一玩</a></div>
 	 <div id="dh4"><img src="picture/tb4.png"><a href="test1.html">课后答一答</a></div>
-</div>
 </div>
 </body>
 </html>
